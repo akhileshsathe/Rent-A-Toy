@@ -31,7 +31,7 @@ kinds.
 
 ## Documentation
 
-[Documentation](https://github.com/akhileshsathe/automated-garden/blob/main/Documentation/documentation.pdf)
+[Documentation](https://github.com/akhileshsathe/Rent-A-Toy/blob/master/Documentation/Documentation.pdf)
 
 
 ## Tech Stack
