@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#d59d00</color>
+    <color name="secondary">#1f1e27</color>
+    <color name="primaryText">#fcf1df</color>
+    <color name="secondaryText">#A29B91</color>
+    <color name="unfocused">#FFE0B2</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+    <color name="errorColor">#FF0000</color>
+    <color name="disabled">#727272</color>
+</resources>
+
+<!--<resources>-->
+<!--    <color name="black">#FF000000</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+<!--    <color name="primaryText">#d59d00</color>-->
+<!--    <color name="primary">#1f1e27</color>-->
+<!--    <color name="secondary">#fcf1df</color>-->
+<!--    <color name="secondaryText">#A29B91</color>-->
+<!--    <color name="unfocused">#FFE0B2</color>-->
+<!--    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>-->
+<!--    <color name="errorColor">#FF0000</color>-->
+<!--    <color name="disabled">#727272</color>-->
+<!--</resources>-->

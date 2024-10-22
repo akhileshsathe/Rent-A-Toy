@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/secondary"
+    android:layout_margin="3dp"
+
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="10dp"
+
+        >
+    <ImageView
+        android:padding="5dp"
+
+        android:layout_gravity="center"
+        android:id="@+id/toyImageView"
+        android:layout_width="100dp"
+
+        android:layout_height="100dp"
+
+        android:scaleType="centerInside"
+        android:src="@drawable/rubik"
+
+        />
+    </androidx.cardview.widget.CardView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="0.75"
+    >
+
+    <TextView
+        android:id="@+id/toyNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/toyCategoryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/toyAgeGroupTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/toyRentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:layout_marginEnd="30dp"
+        android:background="#c0c0c0"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

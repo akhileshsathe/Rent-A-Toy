@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:background="@color/secondary"
+    android:layout_margin="3dp"
+
+
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textColor="@color/primaryText"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Order " />
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Email: " />
+
+
+
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/userIdTextView"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="User ID: " />-->
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPI Reference: " />
+
+
+
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: " />
+
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="City: " />
+
+
+
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cart Items: " />
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Date: " />
+
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Amount: " />
+        <TextView
+            android:textColor="@color/primary"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Duration: " />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/linearLayout"
+
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textSize="20dp"
+            android:text=" ‎"
+            />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Email: " />
+
+
+
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/userIdTextView"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="User ID: " />-->
+        <TextView
+            android:id="@+id/upiRefTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPI Reference: " />
+
+
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: " />
+
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="City: " />
+
+
+
+        <TextView
+            android:id="@+id/cartItemsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart Items: " />
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/orderDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date: " />
+
+        <TextView
+            android:id="@+id/orderDeliveryDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/orderReturnDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+
+        <TextView
+            android:id="@+id/orderAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Amount: " />
+        <TextView
+            android:id="@+id/orderDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Duration: " />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/secondaryText"
+        android:layout_alignBottom="@+id/linearLayout"
+        />
+
+</RelativeLayout>

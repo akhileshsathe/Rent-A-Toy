@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminManageUsers"
+    android:orientation="vertical"
+    android:background="@color/secondary"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Manage Users"
+        android:textColor="@color/primaryText"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textColor="@color/primary"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="250dp"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/_0878"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9F333333"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCustomers"
+                    android:layout_width="250dp"
+                    android:layout_height="120dp"
+                    android:drawableTop="@drawable/user"
+                    android:drawableTint="@color/primaryText"
+                    android:text="Customers"
+                    android:backgroundTint="#0000"
+                    android:textSize="24dp"
+                    app:cornerRadius="10dp"
+                    android:textColor="@color/primaryText"
+                    />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="250dp"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/delivery"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#95333333"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:drawableTop="@drawable/fast_delivery"
+                    android:drawableTint="@color/primaryText"
+                    android:layout_width="250dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/btnDelivery"
+                    android:text="Delivery Partners"
+                    android:textSize="24dp"
+                    app:cornerRadius="10dp"
+
+                    android:textColor="@color/primaryText"
+                    android:backgroundTint="#0000"
+                    />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

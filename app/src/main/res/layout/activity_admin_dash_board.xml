@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/secondary"
+    tools:context=".AdminDashBoard">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Admin Dashboard"
+        android:textColor="@color/primaryText"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administration"
+        android:textColor="@color/primary"
+        android:gravity="center"/>
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/primary"
+        android:visibility="gone"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D781D4FA"
+
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:textSize="20sp"
+                android:text="Total Users"
+                android:textColor="@color/primaryText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admins:"
+                android:textColor="@color/primaryText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customers:"
+                android:textColor="@color/primaryText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Partners:"
+                android:textColor="@color/primaryText"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+
+                android:textSize="20sp"
+                android:id="@+id/txtTotalUserCount"
+                android:textColor="@color/primaryText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+
+
+                android:textColor="@color/primaryText"
+                android:id="@+id/txtAdminCount"/>
+
+            <TextView
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="textEnd"
+                android:textColor="@color/primaryText"
+                android:id="@+id/txtCustomerCount"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textColor="@color/primaryText"
+                android:id="@+id/txtDeliveryPartnersCount"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D7EF9A9A"
+
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="20sp"
+                    android:text="Total Toys"
+                    android:textColor="@color/primaryText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Infants (0-12 Months):"
+                    android:textColor="@color/primaryText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Toddlers (1-3 years):"
+                    android:textColor="@color/primaryText"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Preschoolers (3-5 years)"
+                    android:textColor="@color/primaryText"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For School-Age (6-12 years)"
+                    android:textColor="@color/primaryText"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Teens (13-19 year)"
+                    android:textColor="@color/primaryText"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtToyCount"
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primaryText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:id="@+id/txInfantsCount"
+                    android:textColor="@color/primaryText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtToddlersount"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primaryText"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtPreSchoolersCount"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primaryText"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSchoolAgeCount"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primaryText"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTeensCount"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primaryText"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D6E1BEE7"
+
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="20sp"
+                    android:text="Total Order"
+                    android:textColor="@color/secondary"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Week"
+                    android:textColor="@color/secondary"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Month"
+                    android:textColor="@color/secondary"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Year"
+                    android:textColor="@color/secondary"
+                    />
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="For School-Age (6-12 years)"-->
+                <!--                    android:textColor="@color/secondary"-->
+                <!--                    />-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="For Teens (13-19 year)"-->
+                <!--                    android:textColor="@color/secondary"-->
+                <!--                    />-->
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtOrderCount"
+                    android:textSize="20sp"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:textColor="@color/secondary"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:id="@+id/txWeekCount"
+                    android:textColor="@color/secondary"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtMonthCount"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:textColor="@color/secondary"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtYearCount"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:textColor="@color/secondary"
+                    />
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:id="@+id/txtSchoolAgeCount"-->
+                <!--                    android:textAlignment="textEnd"-->
+                <!--                    android:layout_gravity="end"-->
+                <!--                    android:textColor="@color/secondary"-->
+                <!--                    />-->
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:id="@+id/txtTeensCount"-->
+                <!--                    android:textAlignment="textEnd"-->
+                <!--                    android:layout_gravity="end"-->
+                <!--                    android:textColor="@color/secondary"-->
+                <!--                    />-->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

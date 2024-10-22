@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/secondary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserViewToy">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Toy Details"
+        android:textColor="@color/primaryText"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detailed Information"
+        android:textColor="@color/primary"
+        android:gravity="center"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.75"
+        >
+        <LinearLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+
+
+            >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/txtToyName"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:visibility="gone"
+                android:id="@+id/txtToyID"/>
+</LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:backgroundTint="@color/white"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="5dp"
+                >
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/toyImageView"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/istockphoto_1474775270_170667a"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="22dp"
+                android:layout_gravity="start"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Price:"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    />
+                <TextView
+                    android:text="₹"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/txtToyRent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="/day"
+                    />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="22dp"
+    >
+            <TextView
+                android:text="Category:"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/txtToyCategory"/>
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="22dp"
+                >
+                <TextView
+                    android:text="Age Group:"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/txtToyAgeGroup"/>
+            </LinearLayout>
+            <TextView
+                android:text="Description:"
+                android:layout_marginStart="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+
+                android:scrollbars="vertical"
+                android:id="@+id/txtToyDesc"/>
+        </ScrollView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="end|bottom"
+        android:weightSum="1"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="0.25">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:drawableTint="@color/primaryText"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:id="@+id/btnAddToCartToy"
+            android:drawableLeft="@drawable/add_to_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Add to Cart"
+            android:textColor="@color/primaryText"
+
+
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

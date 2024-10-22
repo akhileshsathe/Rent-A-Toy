@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/secondary"
+
+    tools:context=".UserHome">
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:background="@color/secondary"
+        android:layout_below="@+id/controls"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/controls"
+
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:elevation="4dp"
+    android:orientation="horizontal">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/secondary"
+        android:theme="@style/AppSearchView"
+
+
+
+        android:iconifiedByDefault="false"
+        android:queryHint="Search" />
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        app:cornerRadius="50dp"
+        app:icon="@drawable/profile"
+        app:iconTint="@color/secondary"
+        app:iconGravity="textStart"
+        android:backgroundTint="@color/white"
+
+        android:id="@+id/btnUserSettings"
+        app:iconPadding="0dp"
+
+
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginStart="5dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        app:cornerRadius="50dp"
+        app:icon="@drawable/shopping_cart"
+        app:iconTint="@color/secondary"
+        app:iconGravity="textStart"
+        android:backgroundTint="@color/white"
+
+        android:id="@+id/btnCart"
+        app:iconPadding="0dp"
+
+
+
+        />
+</LinearLayout>
+
+
+</RelativeLayout>

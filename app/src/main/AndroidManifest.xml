@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RentAToy"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserMenu"
+            android:exported="false" />
+        <activity
+            android:name=".UserOrders"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryDetails"
+            android:exported="false" />
+        <activity
+            android:name=".UserOrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryHistory"
+            android:exported="false" />
+        <activity
+            android:name=".ReturnScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Returns"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryOrderAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryScreen"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryPendning"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryManageOrders"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryHome"
+            android:exported="false" />
+        <activity
+            android:name=".AdminOrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageApprovedOrders"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewReturned"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewDelivered"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewDelieryPending"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewApproved"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewPending"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageOrders"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewOrders"
+            android:exported="false" />
+        <activity
+            android:name=".Checkout"
+            android:exported="false" />
+        <activity
+            android:name=".Cart"
+            android:exported="false" />
+        <activity
+            android:name=".UserViewToy"
+            android:exported="false" />
+        <activity
+            android:name=".AdminUserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewDelivery"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewDeliveryPartner"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageUsers"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEditToy"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewToys"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddToy"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManageToys"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome"
+            android:exported="false" />
+        <activity
+            android:name=".UserHome"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

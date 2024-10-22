@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/secondary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddToy">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Manage Toys"
+        android:textColor="@color/primaryText"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a toy"
+        android:textColor="@color/primary"
+        android:gravity="center"/>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.85"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtToyIDLayout"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/outline_toys_24"
+        android:textColorHint="@color/primaryText"
+        app:startIconTint="@color/white"
+        style="@style/FilledBoxEndIconTint"
+        android:hint="Toy ID"
+        app:errorEnabled="true"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtToyID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtToyNameLayout"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/outline_toys_24"
+        android:textColorHint="@color/primaryText"
+        app:startIconTint="@color/white"
+        style="@style/FilledBoxEndIconTint"
+        android:hint="Toy Name"
+        app:errorEnabled="true"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtToyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtToyRentalLayout"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/outline_currency_rupee_24"
+        android:textColorHint="@color/primaryText"
+        app:startIconTint="@color/white"
+        style="@style/FilledBoxEndIconTint"
+        android:hint="Toy Rental Fees"
+        app:errorEnabled="true"
+        app:endIconMode="clear_text"
+        app:helperText="In rupees"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtToyRent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtToyCategoryLayout"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/outline_category_24"
+        android:textColorHint="@color/primaryText"
+        app:startIconTint="@color/white"
+        style="@style/FilledBoxEndIconTint"
+        android:hint="Toy Category"
+        app:errorEnabled="true"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtToyCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/FilledDropDownBoxEndIconTint"
+
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Available"
+        app:endIconTint="@color/primaryText"
+        app:errorEnabled="true"
+        android:id="@+id/edtToyAvailableLayout"
+        android:foregroundTint="@color/primaryText"
+        app:startIconDrawable="@drawable/outline_toggle_on_24"
+        app:helperText="True by default"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/spinnerToyAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/FilledDropDownBoxEndIconTint"
+
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Age Group"
+        app:endIconTint="@color/primaryText"
+        app:errorEnabled="true"
+        android:id="@+id/edtToyAgeGroupLayout"
+        android:foregroundTint="@color/primaryText"
+        app:startIconDrawable="@drawable/age"
+
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/spinnerAgeGroupAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtToyDescLayout"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/outline_category_24"
+        android:textColorHint="@color/primaryText"
+        app:startIconTint="@color/white"
+        style="@style/FilledBoxEndIconTint"
+        android:hint="Toy Description"
+        app:errorEnabled="true"
+
+        app:endIconMode="clear_text"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtToyDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="3"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/btnAddImage"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cornerRadius="5dp"
+        app:strokeColor="@color/box_stroke_color_selector"
+        app:strokeWidth="1dp"
+
+        android:text="Add Toy Image"
+        android:backgroundTint="@color/black"
+        android:drawableLeft="@drawable/outline_image_24"
+
+        android:textColor="@color/primaryText"
+
+        />
+</LinearLayout>
+</ScrollView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_weight="0.15"
+        android:layout_gravity="center"
+        android:id="@+id/btnAddToy"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Add Toy"
+        android:textColor="@color/secondary"
+
+
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_filter_infants"
+        android:title="Filter Infants"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_filter_toddlers"
+        android:title="Filter Toddlers"
+        app:showAsAction="ifRoom" />
+
+    <!-- Add other filter options as needed -->
+
+</menu>

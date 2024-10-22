@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/secondary"
+    android:weightSum="1"
+    tools:context=".Signup">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/secondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="0.80"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Profile"
+            android:textColor="@color/primaryText"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/txtUserType"
+            android:text=""
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+
+            />
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtEmailLayout"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+
+                    app:startIconDrawable="@drawable/outline_email_24"
+
+                    android:textColorHint="@color/primaryText"
+                    app:startIconTint="@color/white"
+                    style="@style/FilledBoxEndIconTint"
+                    android:hint="Email"
+                    app:errorEnabled="true"
+                    app:endIconMode="clear_text"
+
+                    app:helperText="Email cannot be changed"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:enabled="false"
+
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtFullNameLayout"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:startIconDrawable="@drawable/outline_person_24"
+                    android:textColorHint="@color/primaryText"
+                    app:startIconTint="@color/white"
+                    style="@style/FilledBoxEndIconTint"
+                    android:hint="Full Name"
+                    app:errorEnabled="true"
+                    app:endIconMode="clear_text"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:enabled="false"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtPhoneLayout"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    android:layout_gravity="center"
+                    app:startIconDrawable="@drawable/baseline_phone_24"
+                    android:textColorHint="@color/primaryText"
+                    app:startIconTint="@color/white"
+                    style="@style/FilledBoxEndIconTint"
+                    android:hint="Contact"
+
+                    app:errorEnabled="true"
+                    app:prefixText="+91 "
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:enabled="false"
+                        android:inputType="phone"
+
+
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtDOBLayout"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    android:layout_gravity="center"
+                    app:startIconDrawable="@drawable/outline_edit_calendar_24"
+                    android:textColorHint="@color/primaryText"
+                    app:startIconTint="@color/white"
+                    style="@style/FilledBoxEndIconTint"
+                    android:hint= "Date of Birth"
+                    app:errorEnabled="true"
+
+                    app:helperText="DD/MM/YYYY">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+
+                        android:inputType="date"
+
+
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtAddressLayout"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+
+                    app:startIconDrawable="@drawable/outline_home_24"
+
+                    android:textColorHint="@color/primaryText"
+                    app:startIconTint="@color/white"
+                    style="@style/FilledBoxEndIconTint"
+                    android:hint="Address"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minLines="1"
+                        android:inputType="textMultiLine"
+                        android:enabled="false"
+
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edtCityLayout"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+
+                    app:startIconDrawable="@drawable/outline_location_city_24"
+
+                    android:textColorHint="@color/primaryText"
+                    app:startIconTint="@color/white"
+                    style="@style/FilledBoxEndIconTint"
+                    android:hint="City"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minLines="1"
+                        android:inputType="textMultiLine"
+                        android:enabled="false"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/txtEditBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        app:strokeColor="@color/primary"
+        app:strokeWidth="2dp"
+        android:text="Edit Profile"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:textColor="@color/secondaryText"
+        android:backgroundTint="@color/secondary"
+        />
+
+
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>
